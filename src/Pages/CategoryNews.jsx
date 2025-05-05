@@ -4,7 +4,7 @@ import NewsCard from '../components/NewsCard';
 
 
 
-const newsPromise = fetch('news.json').then(res=> res.json())
+const newsPromise = fetch('/news.json').then(res=> res.json())
 
 const CategoryNews = () => {
 const data = use(newsPromise)
